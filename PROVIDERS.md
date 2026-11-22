@@ -18,7 +18,7 @@ In Claude Code run `/plugin marketplace add OpZero-sh/plugins`, then `/plugin in
 
 ## Grok Build
 
-From a checkout of this repository, run `grok --plugin-dir .`. Open `/plugins` or `/mcps` to check the loaded capabilities. Grok Build reads the Claude-compatible plugin, its skills and MCP configuration. [Grok Build plugins](https://docs.x.ai/build/features/skills-plugins-marketplaces)
+From a checkout of this repository, run `grok plugin validate .` and `grok plugin install .`. View installed capabilities with `grok plugin details sermon-prep`. Grok Build reads the Claude-compatible plugin, its skills and MCP configuration. [Grok Build plugins](https://docs.x.ai/build/features/skills-plugins-marketplaces)
 
 ## Grok API
 
