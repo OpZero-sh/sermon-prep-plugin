@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sermon-prep-fathers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Locate and read a passage from the Ante-Nicene or Nicene and Post-Nicene Fathers.",
   "author": {
     "name": "OpZero",
