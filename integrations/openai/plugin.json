@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sermon-prep",
+  "version": "1.0.0",
+  "description": "Build a sermon from the passage outward, with parallel translations, original-language notes, early Christian sources and a private place for the manuscript.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "repository": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Sermon Prep",
+        "shortDescription": "Study and prepare a sermon",
+        "longDescription": "Build a sermon from the passage outward, with parallel translations, original-language notes, early Christian sources and a private place for the manuscript.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/OpZero-sh/sermon-prep-plugin",
+        "privacyPolicyURL": "https://opzero.sh/privacy",
+        "supportURL": "https://opzero.sh/support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

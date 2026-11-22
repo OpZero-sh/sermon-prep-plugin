@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sermon-prep-scripture",
+  "version": "1.0.0",
+  "description": "Read a passage, compare the BSB and KJV, or locate a remembered phrase.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://scripture-mcp.mcp.opzero.sh/",
+  "repository": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Scripture Lookup",
+        "shortDescription": "Read and compare Bible verses",
+        "longDescription": "Read a passage, compare the BSB and KJV, or locate a remembered phrase.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://scripture-mcp.mcp.opzero.sh/",
+        "privacyPolicyURL": "https://scripture-mcp.mcp.opzero.sh/?page=privacy",
+        "supportURL": "https://scripture-mcp.mcp.opzero.sh/?page=support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

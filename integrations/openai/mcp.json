@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "desk": {
+      "type": "streamable-http",
+      "url": "https://sermon-prep.mcp.opzero.sh/mcp"
+    },
+    "fathers": {
+      "type": "streamable-http",
+      "url": "https://church-fathers-library.mcp.opzero.sh/mcp"
+    },
+    "scripture": {
+      "type": "streamable-http",
+      "url": "https://scripture-mcp.mcp.opzero.sh/mcp"
+    }
+  }
+}

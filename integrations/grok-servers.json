@@ -1,0 +1,31 @@
+{
+  "desk": {
+    "url": "https://sermon-prep.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "study_passage",
+      "fathers_on_passage",
+      "cross_references",
+      "get_sermon",
+      "list_sermons"
+    ],
+    "token_env": "SERMON_PREP_ACCESS_TOKEN"
+  },
+  "fathers": {
+    "url": "https://church-fathers-library.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "list_volumes",
+      "volume_contents",
+      "find_sections",
+      "read_section"
+    ]
+  },
+  "scripture": {
+    "url": "https://scripture-mcp.mcp.opzero.sh/mcp",
+    "allowed_tools": [
+      "get_passage",
+      "compare_translations",
+      "search_verses",
+      "list_translations"
+    ]
+  }
+}

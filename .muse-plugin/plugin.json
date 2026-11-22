@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "name": "sermon-prep",
+  "version": "1.0.0",
+  "displayName": "Sermon Prep",
+  "description": "Build a sermon from the passage outward, with parallel translations, original-language notes, early Christian sources and a private place for the manuscript.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "id": "research-a-passage",
+        "path": "skills/research-a-passage/SKILL.md"
+      },
+      {
+        "id": "work-on-a-manuscript",
+        "path": "skills/work-on-a-manuscript/SKILL.md"
+      }
+    ],
+    "mcpServers": [
+      {
+        "id": "fathers",
+        "transport": "http",
+        "url": "https://church-fathers-library.mcp.opzero.sh/mcp"
+      },
+      {
+        "id": "scripture",
+        "transport": "http",
+        "url": "https://scripture-mcp.mcp.opzero.sh/mcp"
+      }
+    ]
+  }
+}

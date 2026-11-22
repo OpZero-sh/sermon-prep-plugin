@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sermon-prep-fathers",
+  "version": "1.0.0",
+  "description": "Locate and read a passage from the Ante-Nicene or Nicene and Post-Nicene Fathers.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://church-fathers-library.mcp.opzero.sh/",
+  "repository": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Church Fathers Library",
+        "shortDescription": "Read early Christian sources",
+        "longDescription": "Locate and read a passage from the Ante-Nicene or Nicene and Post-Nicene Fathers.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://church-fathers-library.mcp.opzero.sh/",
+        "privacyPolicyURL": "https://church-fathers-library.mcp.opzero.sh/?page=privacy",
+        "supportURL": "https://church-fathers-library.mcp.opzero.sh/?page=support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

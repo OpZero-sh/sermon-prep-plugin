@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sermon-prep-desk",
+  "version": "1.0.0",
+  "description": "Prepare a sermon, look up related sources and keep a versioned private manuscript.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "homepage": "https://sermon-prep.mcp.opzero.sh/",
+  "repository": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "license": "LicenseRef-OpZero-Plugin",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Sermon Desk",
+        "shortDescription": "Build a sermon manuscript",
+        "longDescription": "Prepare a sermon, look up related sources and keep a versioned private manuscript.",
+        "developerName": "OpZero",
+        "category": "Productivity",
+        "websiteURL": "https://sermon-prep.mcp.opzero.sh/",
+        "privacyPolicyURL": "https://sermon-prep.mcp.opzero.sh/?page=privacy",
+        "supportURL": "https://sermon-prep.mcp.opzero.sh/?page=support",
+        "termsOfServiceURL": "https://opzero.sh/terms",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

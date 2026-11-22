@@ -1,0 +1,18 @@
+{
+  "name": "sermon-prep",
+  "displayName": "Sermon Prep",
+  "version": "1.0.0",
+  "description": "Build a sermon from the passage outward, with parallel translations, original-language notes, early Christian sources and a private place for the manuscript.",
+  "author": {
+    "name": "OpZero",
+    "url": "https://opzero.sh"
+  },
+  "repository": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "homepage": "https://github.com/OpZero-sh/sermon-prep-plugin",
+  "documentationUrl": "https://github.com/OpZero-sh/sermon-prep-plugin#readme",
+  "privacyPolicyUrl": "https://opzero.sh/privacy",
+  "supportUrl": "https://opzero.sh/support",
+  "termsOfServiceUrl": "https://opzero.sh/terms",
+  "icon": "./assets/icon.png",
+  "license": "LicenseRef-OpZero-Plugin"
+}
