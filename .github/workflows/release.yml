@@ -1,0 +1,18 @@
+# Cuts a GitHub release when the plugin version changes on main.
+# The steps live in the shared workflow: validate, build the ZIP packages,
+# create the v<version> release, refresh the downloads branch.
+name: release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .claude-plugin/plugin.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    uses: OpZero-sh/plugins/.github/workflows/release-plugin.yml@main

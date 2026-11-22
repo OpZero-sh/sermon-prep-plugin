@@ -11,6 +11,18 @@
   "capabilities": {
     "skills": [
       {
+        "id": "find-research",
+        "path": "skills/find-research/SKILL.md"
+      },
+      {
+        "id": "plan-sundays",
+        "path": "skills/plan-sundays/SKILL.md"
+      },
+      {
+        "id": "read-the-fathers",
+        "path": "skills/read-the-fathers/SKILL.md"
+      },
+      {
         "id": "research-a-passage",
         "path": "skills/research-a-passage/SKILL.md"
       },
