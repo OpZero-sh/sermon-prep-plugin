@@ -1,7 +1,7 @@
 {
   "name": "sermon-prep",
   "displayName": "Sermon Prep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Build a sermon from the passage outward, with parallel translations, original-language notes, early Christian sources and a private place for the manuscript.",
   "author": {
     "name": "OpZero",

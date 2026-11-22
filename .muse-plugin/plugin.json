@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "name": "sermon-prep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Sermon Prep",
   "description": "Build a sermon from the passage outward, with parallel translations, original-language notes, early Christian sources and a private place for the manuscript.",
   "compat": {

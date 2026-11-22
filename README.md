@@ -45,14 +45,13 @@ Each skill folder has a reference file with the data sources, limits and rules t
 
 `patristic-researcher` is a read only researcher. Given a verse, it looks up which Fathers cite it, opens the cited sections, reads around them, and returns short quotations with full citations and a record of what it could not confirm. It cannot read or change your sermons.
 
-### Hooks
+### Hook
 
-The hooks run in Claude Code. Each one is a short shell script in the plugin’s hooks folder that prints a fixed message. Neither reads the tool payload, writes to disk or uses the network.
+The hook runs in Claude Code. It is a short shell script in the plugin’s hooks folder that prints a fixed message. It never reads the tool payload, writes to disk or uses the network. It adds to what Claude tells you and never interrupts a tool call.
 
 | When | Script | What it does |
 | --- | --- | --- |
 | After a draft is saved | `hooks/draft-receipt.sh` | Reminds Claude to read the save result before reporting success, to give you the sermon and draft version, and on a version conflict to fetch the current draft and keep both sets of edits. |
-| Before a sermon is deleted | `hooks/confirm-delete-sermon.sh` | Asks you to confirm, because the deletion removes the sermon, its outline, its notes and every draft. |
 
 ## What the plugin connects to and runs
 

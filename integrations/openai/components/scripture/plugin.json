@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sermon-prep-scripture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read a passage, compare the BSB and KJV, or locate a remembered phrase.",
   "author": {
     "name": "OpZero",
