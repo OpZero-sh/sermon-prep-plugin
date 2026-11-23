@@ -47,12 +47,9 @@ Each skill folder has a reference file with the data sources, limits and rules t
 
 ### Hooks
 
-The hooks run in Claude Code. Each one is a short shell script in the plugin’s hooks folder that prints a fixed message. Neither reads the tool payload, writes to disk or uses the network.
+None. The plugin has no hooks and runs no code on your machine.
 
-| When | Script | What it does |
-| --- | --- | --- |
-| After a draft is saved | `hooks/draft-receipt.sh` | Reminds Claude to read the save result before reporting success, to give you the sermon and draft version, and on a version conflict to fetch the current draft and keep both sets of edits. |
-| Before a sermon is deleted | `hooks/confirm-delete-sermon.sh` | Asks you to confirm, because the deletion removes the sermon, its outline, its notes and every draft. |
+The `work-on-a-manuscript` skill carries the safeguards instead. After a draft is saved it tells Claude to read the save result before reporting success, to give you the sermon and draft version, and on a version conflict to fetch the current draft and keep both sets of edits. Before a sermon is deleted it tells Claude to ask you to confirm, because the deletion removes the sermon, its outline, its notes and every draft.
 
 ## What the plugin connects to and runs
 
@@ -66,10 +63,10 @@ The plugin talks to three remote MCP servers run by OpZero. It contacts no other
 
 The two public services state that they do not store requests. Sermon Prep stores what you save under your account until you delete it. Its privacy policy says it does not log the passages you study or the themes you search. To answer a study request, the Sermon Prep service itself asks other services for public data: its sibling OpZero services receive the passage, word or date, OpenAlex receives a research theme you search, and the DOI registry receives the DOI of a study you save. The policy says none of them receives your name, your account or your sermon. Exports are returned to you in Claude and are not sent anywhere.
 
-The repository also holds files for other assistants. Claude does not run them, and nothing in the plugin calls them.
+The repository also holds settings files for other assistants. Claude does not run them, and nothing in the plugin calls them. The two scripts that use them are not in this repository. They live in the catalog repository, [OpZero-sh/plugins](https://github.com/OpZero-sh/plugins).
 
-- `scripts/build_openai.py` builds ZIP packages for ChatGPT and Codex from this repository. It reads local files and writes ZIP files to the folder you name. It uses no network.
-- `integrations/grok_example.py` is an optional example for the xAI API. It reads `XAI_API_KEY` from your environment, and for the Sermon Prep connection an access token from `SERMON_PREP_ACCESS_TOKEN`, and sends one request to `api.x.ai` only when you run it yourself without the dry run flag. With the dry run flag it prints the request and sends nothing.
+- The catalog's `tools/build_openai.py` builds ZIP packages for ChatGPT and Codex from this repository's skills, license, `assets/icon.png` and `integrations/openai`. It reads local files and writes ZIP files to the folder you name. It uses no network.
+- The catalog's `tools/grok_example.py` is an optional example for the xAI API. It reads `integrations/grok-servers.json` and `XAI_API_KEY` from your environment, and for the Sermon Prep connection an access token from `SERMON_PREP_ACCESS_TOKEN`, and sends one request to `api.x.ai` only when you run it yourself without the dry run flag. With the dry run flag it prints the request and sends nothing.
 - The JSON files under `integrations/` are settings for those assistants. They list the same three hosts.
 
 ## Sources and limits

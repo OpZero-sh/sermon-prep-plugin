@@ -56,7 +56,7 @@ The desk tools sit behind sign in, so follow the argument names in each tool's s
 
 **Export.** Call `export_sermon` with the sermon id and the format: study notes, handout or small group guide. The text is built only from what the pastor saved. Return it with its source labels intact. Nothing is posted or sent anywhere.
 
-**Delete.** Deleting removes the sermon, its outline, its notes and every draft version, and these tools offer no way to restore it. Name the sermon back to the pastor with its title, passage and date, offer an export first, and ask for a clear yes. Then call `delete_sermon` with the sermon id. In Claude Code the plugin asks for confirmation before this call.
+**Delete.** Deleting removes the sermon, its outline, its notes and every draft version, and these tools offer no way to restore it. Name the sermon back to the pastor with its title, passage and date, offer an export first, and ask for a clear yes. Then call `delete_sermon` with the sermon id. Nothing else asks the pastor before this call runs, so never call it without that yes.
 
 ## Decision points
 
