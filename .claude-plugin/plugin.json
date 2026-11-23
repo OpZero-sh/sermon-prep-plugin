@@ -14,12 +14,5 @@
   "supportUrl": "https://opzero.sh/support",
   "termsOfServiceUrl": "https://opzero.sh/terms",
   "icon": "./assets/icon.png",
-  "license": "LicenseRef-OpZero-Plugin",
-  "network": {
-    "hosts": [
-      "sermon-prep.mcp.opzero.sh",
-      "church-fathers-library.mcp.opzero.sh",
-      "scripture-mcp.mcp.opzero.sh"
-    ]
-  }
+  "license": "LicenseRef-OpZero-Plugin"
 }
